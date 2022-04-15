@@ -1,4 +1,4 @@
-###MySQL Server Installation
+###MySQL Server Installation###
 **1. Download MySQL community server yum repository rpm**
 
 `curl -sSLO https://dev.mysql.com/get/mysql80-community-release-el7-5.noarch.rpm`
