@@ -33,4 +33,4 @@ MySQL includes a security script to change some of the less secure default optio
 
 **7. Testing MySQL server connection**
 
-mysqladmin -u root -p version
+`mysqladmin -u root -p version`
