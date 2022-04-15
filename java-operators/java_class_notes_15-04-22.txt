@@ -1,0 +1,229 @@
+
+Declaring varaibles:
+==============
+int myNum;
+myNum=5;
+
+int myNum = 5;               						// Integer (whole number)
+float myFloatNum = 5.99f;    				   // floating point number
+char myLetter = 'D';         	  			   	  // character type   '*'
+boolean myBool = false;       				 // boolean type
+String myText = "Hello";     				    // String is a class here  "hello"+"hi"        "hello",   hellohi
+long $accountNumber=123433435l;  // long
+double d=124.5678d;						  // double
+
+declaring multiple varaibles at a time:
+===========================
+int number2, number3 = 99;
+int number3=20, number4 = 99;
+
+Naming conventions for a varaibles:
+===========================
+1. varaibles name should start with lowercase.
+2. varaibles name can contains lowercase, uppercase,numbers only except $ _    // int 2aba
+3. varaible name can start with $ or _
+
+operators:
+=======
++ 		addition
+- 		subtraction
+* 		multiplication
+/ 		division
+= 		assignment
+
+Excercise: x=20 ,y=5
+===============
+expression		output
+========		=====
+x + y   					20+5=25   (int+int=int)
+
+x - y 					20-5=15
+
+x *y 						20*5=100
+
+x /y 						20/5= 4
+
+x%y						20%5=0     5)20(4
+													20
+													----
+													0
+													
+	"string"+ any datatype=string
+
+WAP to add numbers:
+================
+public class AddNumbers {
+	public static void main(String[] args) {
+		int a=10,b=20;
+		int sum= a+b;
+		System.out.println("sum of two numbers is "+sum);
+	}
+}
+
+WAP to subtract  two numbers:
+===================
+public class SubtractNumbers {
+	public static void main(String[] args) {
+		int x=20;
+		int y=30;
+		int sub= a-b;
+		System.out.println("sum of two numbers is "+sub);
+	}
+}
+
+Assignment:
+=========
+1. WAP to multiplication of two numbers: 
+2. WAP to division of two numbers: 
+3. WAP to check whether 22 is divisible in 4 or not
+4. WAP to check whether 32 is even number or not
+
+comparison operators:  decision making (true/false)  				x=10, y=20              
+---------------------------------------------------------------------------------------
+operator	meaning								example      internal    o/p
+---------------------------------------------------------------------------------------
+== 			Equal to 									x == y 	      10==20    false   
+!= 			Not equal 								x != y 	      10!=20     true
+> 				Greater than 							x > y 	      10>20      false
+< 				Less than 								x < y 	      10<20	   true
+>= 			Greater than or equal to 		x >= y 	      10>=20    false
+<= 			Less than or equal to 			x <= y		  10<=20	    true
+-----------------------------------------------------------------------------------------
+
+WAP to PRINT voter is a valid voter or not if age is 17 /18
+WAP
+
+decision making statements:
+=====================
+
+Syntax:
+----------
+if(condition)  // here condition is type of boolean
+
+{
+//Set of statements//++++++
+}
+else
+{
+//set of statements
+}
+
+here else block is optional.
+
+programs:
+=======
+1. WAP to check whether 10 and 20 are equal or not
+2. WAP to check whether 10 is positive or negative
+3  WAP to find greatest of 3 numbers a=10,b=27,c=6.
+4. WAP to check a number is even or not.
+
+Interview Question:
+===============
+what happens if we change the signature of the main method?
+
+code compiles successfully but at runtime it gives error.
+
+Lets say we have below program:
+
+public class HelloWorld{
+
+private static void main(String[] args){
+
+ System.out.println("hello world");
+
+}
+
+}
+compilation: javac HelloWorld.java  
+
+running: 	   java HelloWorld
+
+Error:
+Main method not found in class HelloWorld, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+Actually main method is registered with signature public static void main(String[] args) ,
+if you use invalid modifier it gives error at runtime.
+
+
+Question: Explain about main method: ( public static void main(String[] args) )
+============================
+public  : from any where we can access.
+static   : without creating object we can access this  method.
+void     : this method is not returning a value
+main    : name of the method.
+String[] args: during program execution if you want send some data, then that data we store in args.
+
+Eclipse shortcuts:
+cr+d  delete entire line
+sysout then ctrl+space
+
+&&  logical and : combine two or more conditons
+
+||  combine two or more conditons
+
+condtion1 && conditon2 ---> true, conditon1 and condition2 are true
+true && true= true;
+
+Unary Operators :
+-------------------------
+a) Increment operator : ++
+------------------------------
+- It increases the value by one.
+for ex: a=10; increment a add +1 to a  
+- It is denoted as ++
+- It is of two types
+1.pre-increment     //++a
+2.post-increment   //++a
+
+b) Decrement operator : --
+------------------------------
+- It decreases the value by one.
+for ex: a=10; decrement a subtract -1 to a
+- It is denoted as --
+- It is of two types
+1.pre-decrement  //--a
+2.post-decrement  //a--
+Types :
+----------
+preIncrement :
+------------------
+- The rule is first increment value then print or assign it or store it in variable.
+- it is denoted as ++variablename
+For Ex: int a=10; //11
+int b=++a://pre increment---->10+1
+SOP(b);//11
+Ex2: int a=250;
+int b=++a://a is incresed by 1 and then 251 is stored in b
+Ex3: int a=50://51
+++a: //50+1
+SOP(a);//51
+postIncrement
+--------------------
+- the rule is first print or assign it or store it in variable then increment value.
+- it is denoted as variablename ++
+For ex: int a=10;//11
+int b=a++;//post increment---->1.b=10,2.10+1
+SOP(b);//10
+
+preDecrement :
+--------------------
+- the rule is first decrement value then print or assign it or store it in variable.
+- it is denoted as --variablename
+For ex1: int a=10;
+int b=--a;//pre decrement
+ex2: int a=250:020G.Ravi Kiran_KCCM5
+int b=--a;//a is decreased by 1 and then 249 is stored in b
+ex3: int a=50;//49
+--a; //50-1
+SOP(a);//49
+postDecrement :
+---------------------
+- the rule is first print or assign it or store it in variable then decrement value.
+- it is denoted as variablename--
+For ex: int a=10;
+int b=a--;//post decrement
+SOP(b);//10
+SOP(a);//9
+
