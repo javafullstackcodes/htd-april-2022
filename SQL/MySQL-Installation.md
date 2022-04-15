@@ -93,7 +93,12 @@ Success.
 
 All done! 
 [root@htdhostname ~]# 
-[root@htdhostname ~]# 
+```
+
+**7. Testing MySQL server connection**
+
+`mysqladmin -u root -p version`
+```
 [root@htdhostname ~]# mysqladmin -u root -p version
 Enter password: 
 mysqladmin  Ver 8.0.28 for Linux on x86_64 (MySQL Community Server - GPL)
@@ -142,7 +147,3 @@ mysql> quit
 Bye
 [root@htdhostname ~]# 
 ```
-
-**7. Testing MySQL server connection**
-
-`mysqladmin -u root -p version`
