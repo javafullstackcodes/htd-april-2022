@@ -30,7 +30,7 @@ MySQL includes a security script to change some of the less secure default optio
 
 `sudo mysql_secure_installation`
 
-
+```
 [root@htdhostname ~]# grep 'temporary password' /var/log/mysqld.log
 2022-04-15T19:44:07.651184Z 6 [Note] [MY-010454] [Server] A temporary password is generated for root@localhost: On.*epN#!1w=
 [root@htdhostname ~]# mysql_secure_installation
@@ -141,7 +141,7 @@ mysql>
 mysql> quit
 Bye
 [root@htdhostname ~]# 
-
+```
 
 **7. Testing MySQL server connection**
 
