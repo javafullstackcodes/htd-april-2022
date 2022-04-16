@@ -5,7 +5,7 @@
 
 **2. Install sql yum repository rpm**
 
-`sudo rpm -ivh mysql57-community-release-el7-9.noarch.rpm`
+`sudo rpm -ivh mysql80-community-release-el7-5.noarch.rpm`
 
 **3. Install MySQL server**
 
