@@ -8,9 +8,11 @@ public class AddNumbers {
 		int total=subject1+subject2+subject3;
 		double avg=total/3;
 		
+		
 		if(avg>=35) {
 			
 		}
 	}
 
 }
+
