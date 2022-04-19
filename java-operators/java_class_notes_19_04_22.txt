@@ -1,0 +1,44 @@
+‐‐‐‐‐‐‐‐‐‐‐
+19‐04‐2022
+‐‐‐‐‐‐‐‐‐‐‐
+OOPS
+‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐
+Object Oriented Programming System: It is a programming methodology,
+which fulfils the project requirement.
+
+class and Object :‐
+‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐
+A class is a logic Entity (Because it represents logic of APP).
+An Object is physical Entity (Because it contains memory).
+A class is a blue print or template using which we can develop code of APP.
+An Object is an Entity which gets created using class and it represents the state and behaviours.
+Where state indicates variables(datamembers) and behaviourindicates methods(member function).
+
+Ex: class Student
+{
+//variables
+// methods
+}
+
+Student‐Object
+states 				Behaviours
+====================
+names			studying()
+age					writingexams()
+height				playing()
+weight             
+marks
+contact
+etc
+
+
+
+
+
+It consists of 4 pillars‐
+1. Inheritance
+2. Abstraction
+3. Encapsulation
+4. Polymorphism
+
+
