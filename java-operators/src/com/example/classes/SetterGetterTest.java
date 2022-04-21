@@ -43,7 +43,7 @@ public class SetterGetterTest {
 		
 		//System.out.println(i); //10
 		
-		// to access the varaibles of the class we use objectName.vraibleName (dot) operator
+		// to access the variables of the class we use objectName.vraibleName (dot) operator
 		// to access the methods of the class we use   objectName.methodName() (dot) operator
 		
 		emp.setEmpId(100);
