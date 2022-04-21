@@ -1,0 +1,220 @@
+Reading input from keyboard
+=======================
+1. Scanner
+
+2. BufferedReader and InputStreamReader
+
+Scanner:
+
+java.lang
+import java.util.Scanner; 
+
+// className reference= new className(); //
+
+Scanner scan = new Scanner(System.in);
+String s = scan.next();
+int i = scan.nextInt();
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+//...
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+String s = br.readLine();
+int i = Integer.parseInt(s);
+
+Types of variables in java:
+====================
+epending on declaration variables are divided into two types.
+1.Local variable --- inside method,constructor,blocks, local variables we must intialize.
+2.instance variables -- inside a class without static modifier
+3.static varaible  --inside class with static modifier
+
+
+Wrapper classes:
+==============
+  primitive data types: int,float,double,char,short.long. (these are not objects)
+	jdk 1.5
+	Wraper clasess:
+	int --> Integer (auto boxing)
+	float-> Float
+	double--> Double
+	char-->Character
+	short-->Short
+	long--> Long
+
+classes and objects:
+=================
+==> a class is like the blueprint for a house. Using this blueprint, you can build as many houses as you like.
+==> each house you build (or instantiate, in OO lingo) is an object, also known as an instance.
+==> each house also has an address, of course. If you want to tell someone where the house is, 
+you give them a card with the address written on it. That card is the object's reference.
+
+class className{
+		// variables (state)
+		// metods  (behaviours)
+  }
+  
+ Object: instance of the class, u can create any number of objects using class.
+	
+	className reference= new className();
+	
+ class : Flower, Person, Employee, Student, 
+ object:  Rose, Sudheer, Surendra, Lokesh
+ 
+ constructor:
+ 
+ Definition
+‐‐‐‐‐‐‐‐‐‐‐
+=> Constructor is a special type of method which gets executed
+whenever we created an object
+=> The main purpose of constructor is to initialise a non static
+variable.
+
+Syntax: 
+======
+AccessModifier consructoname(arg/no args) //AccessModifier=public/private/protected
+{
+//body of constructor
+}
+
+Rules for defining constructor
+‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐
+1. Constructor can be public, private, protected or default.
+2. Constructor name must be same as that of classname.
+3. Constructor does not have any return type not even void.
+4. Constructor can be with arguments or without arguments.
+
+Types of Constructors:‐
+‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐--------
+1. No argument Constructor or default constructor
+2. Parameterized Constructor
+
+No argument Constructor
+‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐--------
+‐If a constructor does not have any argument it is called as No argument
+constructor.
+
+class Student //Ex‐1
+{
+String name;
+//define constuctor
+public Student()
+{
+name="John";
+}
+public static void main(String args[])
+{
+Student s1=new Student();
+System.out.println(s1.name);
+Student s2=new Student();
+System.out.println(s2.name);
+Student s3=new Student();
+System.out.println(s3.name);
+}}
+
+One of the drawbacks of no argument constructor is, it provides
+same value for every object.
+
+Therefore to overcome this drawback, we go for parameterized
+constructor.
+
+Parameterised Constructor
+‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐--------
+==> If a constructor contains any arguments, it is called as
+parameterised constructor.
+==> While creating Object, we have to pass particular argument as
+constructor.
+
+constructor overloading:
+===================
+
+==> The main purpose of constructor overloading is to create an object
+in multiple ways.
+
+For ex1: Manufacturing of shirt
+‐half sleeves
+‐full sleeves
+‐without sleeves
+
+For ex2: Lock
+‐Keylock
+‐passwordlock
+‐sensorlock
+
+Constructor Chaining
+‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐
+The process of calling one Constructor from another Constructor is
+called as Constructor chaining.
+Constructor chaining can be achieved in two ways‐
+1. Call to this     ‐‐‐‐‐‐‐‐‐‐>represented as this()
+2. Call to Super ‐‐‐‐‐‐‐‐‐>represented as super()
+
+Call to this ‐ this()
+‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐
+The process of calling one constructor from another constructor
+of same class is called as call to this.
+
+The main Rule for this() is, Call to this must be the First
+statement of a constructor.
+
+Programs
+‐‐‐‐‐‐‐‐‐
+class Add //Ex‐1
+{
+public Add()
+{
+this(100,200);//call another const of same class which has 2
+integer args
+System.out.println("Default add constructor");
+}
+public Add(int i,int j)
+{
+this(223.5,10);//call another const of same class which has 2
+args 1st is double 2nd is int090G.Ravi Kiran_KCCM5
+System.out.println("Result of int+int is : "+(i+j));
+}
+public Add(double d,int i)
+{
+System.out.println("Result of double+int is : "+(d+i));
+}
+public static void main(String args[])
+{
+Add a1=new Add();
+}
+}
+
+difference between methods vs constructors:
+====================================
+
+methods:
+========
+
+1. Since, we can't write business logic directly in class, we use methods.
+2. Syntax:
+AccessModifier NonAccessModifier
+reurntype methodname(args/no args)
+{
+}
+3. Method name can be anything(as per user).
+4. To execute a method, we have to call it
+static  			‐‐‐> Directly
+Non static   ‐‐‐> Object
+
+5. We can call one method from another method directly or through object.
+6. Only Non static methods can be inherited.
+7. Only Non static methods can be Overridden.
+
+consructors
+==========
+
+1. Constructors are mainly used for intialising Non static variables.
+2. Syntax:
+AccessModifier
+Constrctorname(args/no args)
+{
+}
+3. Constructor name must be same as classname.
+4. Constructor will get called automatically, whenever we created an Object.
+5. We can call one constructor from another constructor through consructor chaining.
+6. Constructors cannot be inherited.
+7. Constructors cannot be Overridden.
