@@ -4,6 +4,7 @@ public class Employee {
 
 	private String name;
 	private int empid;
+	
 	private static String company;
 	
 	{

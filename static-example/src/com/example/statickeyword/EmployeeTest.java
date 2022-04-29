@@ -3,7 +3,7 @@ package com.example.statickeyword;
 public class EmployeeTest {
 
 	public static void main(String[] args) {
-		System.out.println("4");
+		System.out.println("main");
 		Employee e= new Employee(); // Employee.class
 		//e.setEmpid(100);
 		//e.setName("suresh");
