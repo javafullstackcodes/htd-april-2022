@@ -51,9 +51,13 @@ public class ArraysErrors {
 		System.out.println("==============working with object[]===================");
 		
 		Object[] myobj= new Object[4];
+		
 		int a=10;
+		
 		float b=20;
+		
 		String s="hello";
+		
 		Student s4= new Student(121,"kb");
 		
 		myobj[0]=a;
