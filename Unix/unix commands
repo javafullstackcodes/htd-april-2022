@@ -1,0 +1,156 @@
+
+
+root  -- super user
+
+home directory -- landing directory /root for root user
+
+
+
+commands 
+
+ls 
+
+pwd
+
+id
+
+su
+
+
+sudo and pbrun
+
+
+cd 
+
+
+file -- to know about file 
+
+
+tail   
+
+tail -f filename
+
+head  
+
+applicaiton installation 
+
+1. creates binary files /bin /sbin  /usr/sbin
+
+2. library files which required for binary files to execute  will be in /lib  /usr/lib 
+
+3. applicaiton settings/configuration files under /etc 
+
+4.  logs will be genetated under  /var
+
+    
+     OS logs 
+    /var/log/messages  -- redhat and centOS
+    /var/log/syslog    -- ubuntu based 
+    /var/adm/messages   -- Solaris 
+    /var/log/syslog     -- IBM AIX 
+    
+
+
+r -read     4
+w -write    2
+x - execute 1
+
+-    it denote file or directory
+r--  owners permissions read 
+rw-  group permissions   read write
+r--  others              read only
+
+-rw-rw-r-- 1 surendra surendra  790236 Apr 14 07:44  5_6075910222981890965.pdf
+
+
+chmod
+
+chown
+
+file management
+
+
+mkdir
+
+touch
+
+grep
+
+
+creating file
+
+adding data to file 
+
+searchig the file
+
+grep
+
+
+
+
+vi editor
+
+1 command mode
+2 insert
+
+
+awk
+
+cut
+
+
+ssh  -- 
+
+IP Address -- 
+
+numbers or names?
+
+names 
+
+
+ports  : 
+
+
+ping
+
+
+nslookup
+
+
+traceroute
+
+
+
+more
+
+less
+
+
+df
+
+du
+
+w
+
+
+ps 
+
+top
+
+sed
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
