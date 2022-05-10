@@ -1,0 +1,22 @@
+
+variables in Java
+
+A variable is a container(memory location)
+
+which holds the value while the Java program is executed. A variable is assigned with a data type
+
+
+Data Types
+
+There are 2 Data types in Java to specify the different  sizes and values that can be stored in the variable
+
+1. Primitive Data type
+2. Non Primitive Data types
+
+
+Collections in Java
+
+The Collection in java is a framework that provides an Architecture to Store and manipulate the group of objects.
+
+Java Collection framework provides many interfaces and classes.
+
